@@ -1,0 +1,59 @@
+.newUser {
+  flex: 4;
+  padding: 20px;
+  &__title {
+
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    &Item {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 20px 0 0;
+    }
+    &Label {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-light-grey);
+    }
+    &Input {
+      height: 20px;
+      padding: 20px;
+      border: 1px solid var(--color-dark-white);
+      border-radius: 5px;
+    }
+    &Gender > input {
+      margin-top: 15px;
+    }
+    &Gender > label {
+      margin: 10px;
+      font-size: 18px;
+      color: grey;
+    }
+    &Select {
+      height: 40px;
+      border-radius: 5px;
+    }
+    &Option {
+
+    }
+    &Btn {
+      width: 400px;
+      height: 40px;
+      border: none;
+      margin-top: 37px;
+      border-radius: 5px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+      background: var(--color-red);
+      transition: all 1s ease;
+      &:hover {
+        background: var(--color-pink);
+      }
+    }
+  }
+}

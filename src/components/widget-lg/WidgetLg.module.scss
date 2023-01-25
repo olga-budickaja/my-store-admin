@@ -1,0 +1,56 @@
+.widgetLg {
+  flex: 2;
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+  -moz-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+  box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  &__table {
+    width: 100%;
+    border-spacing: 20px;
+  }
+  &__tr {
+
+  }
+  &__th {
+    text-align: left;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  &__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  &__name {
+
+  }
+  &__date {
+    font-weight: 300;
+  }
+  &__amount {
+    font-weight: 300;
+  }
+  &__status {
+
+  }
+  &__btn {
+    padding: 5px 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 90px;
+  }
+
+}

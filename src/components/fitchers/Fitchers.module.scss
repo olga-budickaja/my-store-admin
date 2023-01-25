@@ -1,0 +1,38 @@
+.fitcher {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    flex: 1;
+    margin: 0 20px;
+    padding: 30px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+    -moz-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+    box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__revenueContainer {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+  }
+  &__revenue {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  &__rate {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  &__sub {
+    font-size: 15px;
+    color: var(--color-light-grey);
+  }
+}

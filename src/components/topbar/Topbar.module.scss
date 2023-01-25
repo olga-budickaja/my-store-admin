@@ -1,0 +1,63 @@
+.topbar {
+  width: 100%;
+  height: 50px;
+  background: var(--background-color);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  &__wrapper {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+
+  }
+  &__linkLogo {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__logo {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-red);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__iconContainer {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__topIconBadge {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    right: 0;
+    background: var(--color-pink);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+}

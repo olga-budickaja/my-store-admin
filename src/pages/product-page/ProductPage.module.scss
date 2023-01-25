@@ -1,0 +1,140 @@
+.product {
+  flex: 4;
+  padding: 20px;
+  &__titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+
+  }
+  &__addBtn {
+    width: 80px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: MediumSeaGreen;
+    transition: all 1s ease;
+    &:hover {
+      background: SeaGreen;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    &Left, &Right {
+      flex: 1;
+      border-radius: 5px;
+    }
+    &Right {
+      padding: 20px;
+      border-radius: 5px;
+      -webkit-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+      -moz-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+      box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+      &InfoTop {
+        display: flex;
+        align-items: center;
+        &Img {
+          width: 50px;
+          height: 60px;
+          border-radius: 5px;
+          margin-right: 20px;
+          object-fit: cover;
+        }
+        &Name {
+          font-weight: 600;
+        }
+      }
+      &InfoBottom {
+        margin-top: 20px;
+        &Item {
+          width: 150px;
+          display: flex;
+          justify-content: space-between;
+        }
+        &Key {
+          font-weight: 500;
+        }
+        &Value {
+          font-weight: 300;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+    -moz-box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+    box-shadow: 4px 3px 16px -6px rgba(0,0,0,0.41);
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    &Left {
+      display: flex;
+      flex-direction: column;
+      >label {
+        margin: 20px 0 10px 0;
+        color: var(--color-light-grey);
+      }
+      >input, >textarea {
+        margin-bottom: 10px;
+        border: none;
+        padding: 5px;
+        background: var(--background-color);
+        border-bottom: 1px solid var(--color-light-grey);
+      }
+      >select {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        background: var(--background-color);
+        border: 1px solid var(--color-light-grey);
+      }
+    }
+    &Right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    &Upload {
+      display: flex;
+      align-items: center;
+      &Img {
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      &InputFile {
+        display: none;
+      }
+    }
+  }
+  &__btn {
+    border: none;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    background: var(--color-red);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 1s ease;
+    cursor: pointer;
+    &:hover {
+      background: var(--color-pink);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.check {
+  display: flex;
+  &Wrapp {
+    flex: 1;
+  }
+  &WrappWrapp {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &Item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 20px;
+  }
+}
+.select {
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 20px;
+  color: grey;
+  border: 1px solid var(--color-light-grey);
+}
