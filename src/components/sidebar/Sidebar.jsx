@@ -86,7 +86,7 @@ const Sidebar = () => {
                             Analytics
                         </li>
                         <li className={cl.sidebar__item}>
-                            <ReportGmailerrorredOutlined sx={{ fill: "DimGray", marginRight: "10px" }}/>
+                            <ReportGmailerrorredOutlined  sx={{ fill: "DimGray", marginRight: "10px" }}/>
                             Reports
                         </li>
                     </ul>
