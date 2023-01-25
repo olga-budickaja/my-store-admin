@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URL = "https://boa-store.herokuapp.com/api/";
 const token= process.env.REACT_APP_ACESS_TOKEN;
-localStorage.setItem('ACCESS_TOKEN', token)
+localStorage.setItem('REACT_APP_TOKEN', token)
 
 const TOKEN = localStorage.getItem('ACCESS_TOKEN')
 
