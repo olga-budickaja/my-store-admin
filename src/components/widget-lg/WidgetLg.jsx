@@ -13,7 +13,7 @@ const WidgetLg = () => {
     useEffect(() => {
         const getOrders = async () => {
             try {
-                const res = await userRequest.get("orders");
+                const res = await userRequest.get("orders", { withCredentials: true, });
                 setOrders(res.data);
             } catch (e) {
                 console.log(e)

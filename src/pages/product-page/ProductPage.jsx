@@ -52,7 +52,7 @@ const ProductPage = () => {
     useEffect(() => {
         const getStats = async () => {
             try {
-                const res = await userRequest.get("orders/income?pid=" + productId);
+                const res = await userRequest.get("orders/income?pid=" + productId, { withCredentials: true, });
                 const list = res.data.sort((a, b) => {
                     return a._id - b._id
                 })
@@ -95,7 +95,7 @@ const ProductPage = () => {
                 }
             },
             (error) => {
-                // Handle unsuccessful uploads
+                console.log(error)
             },
             () => {
                 getDownloadURL(uploadTask.snapshot.ref)
