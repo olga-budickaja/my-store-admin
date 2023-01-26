@@ -10,5 +10,8 @@ export const publicRequest = axios.create({
 });
 export const userRequest = axios.create({
     baseURL: BASE_URL,
-    headers: {token: `Bearer ${TOKEN}`}
+    body: {token: `Bearer ${TOKEN}`},
+    headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+    },
 });
