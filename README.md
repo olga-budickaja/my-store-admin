@@ -1,5 +1,4 @@
 # my-store-admin
-https://hilarious-crostata-06fe3b.netlify.app
 <h2 align="center">A admin panel.</h2>
 
 <table align="center">
