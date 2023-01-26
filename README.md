@@ -20,7 +20,7 @@
 
 <h3>What the panel can do: </h3>
 <ol>
-  <li>admin registration </br> name: admin </br> password: admin </li>
+  <li>login a admin </br> name: admin </br> password: admin </li>
   <li>add products to the store </li>
   <li>delete products from the store <br/> (please do not delete existing products. Add your own and delete :) </li>
   <li>edit products in the store <br/> edit the photo of the product and its options: color, size, availability </li>
