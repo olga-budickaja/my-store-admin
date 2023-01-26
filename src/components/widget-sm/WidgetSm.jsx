@@ -8,7 +8,7 @@ const WidgetSm = () => {
     useEffect(() => {
         const getUsers = async () => {
             try {
-                const res = await userRequest.get("users/?new=true", { withCredentials: true, });
+                const res = await userRequest.get("users/?new=true");
                 setUsers(res.data);
             } catch (e) {
                 console.log(e)

@@ -14,7 +14,7 @@ import {
 export const login = async (dispatch, user) => {
     dispatch(loginStart());
     try {
-        const res = await publicRequest.post("/auth/login", user, { withCredentials: true, });
+        const res = await publicRequest.post("/auth/login", user);
         dispatch(loginSuccess(res.data));
     } catch (e) {
         dispatch(loginFailure());
@@ -23,7 +23,7 @@ export const login = async (dispatch, user) => {
 export const getProducts = async (dispatch) => {
     dispatch(getProductStart());
     try {
-        const res = await publicRequest.get("/products", { withCredentials: true, });
+        const res = await publicRequest.get("/products");
         dispatch(getProductSuccess(res.data));
     } catch (e) {
         dispatch(getProductFailure());
@@ -43,7 +43,7 @@ export const deleteProduct = async (id, dispatch) => {
 export const updateProduct = async (id, product, dispatch) => {
     dispatch(updateProductStart());
     try {
-        const res = await userRequest.put(`/products/${id}`, product, { withCredentials: true, })
+        const res = await userRequest.put(`/products/${id}`, product)
         dispatch(updateProductSuccess(res.data));
     } catch (e) {
         dispatch(updateProductFailure());
@@ -53,7 +53,7 @@ export const updateProduct = async (id, product, dispatch) => {
 export const addProduct = async (product, dispatch) => {
     dispatch(addProductStart());
     try {
-        const res = await userRequest.post("/products", product, { withCredentials: true, });
+        const res = await userRequest.post("/products", product);
         dispatch(addProductSuccess(res.data));
     } catch (e) {
         dispatch(addProductFailure());
