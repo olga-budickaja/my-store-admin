@@ -29,4 +29,5 @@
   <li>edit products in the store <br/> edit the photo of the product and its options: color, size, availability </li>
 </ol>
 
+<h5>React, Redux, Node.js, MongoDB, Firebase</h5>
 
