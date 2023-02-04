@@ -2,7 +2,7 @@
 # routing internally.
 [[redirects]]
   from = "/*"
-  to = "https://boa-store.herokuapp.com/"
+  to = "https://boa-store.herokuapp.com/api/"
   status = 200
    signed = "REACT_APP_ACCESS_TOKEN"
 
