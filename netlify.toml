@@ -1,13 +1,8 @@
-# The following redirect is intended for use with most SPAs that handle
-# routing internally.
-[[redirects]]
-  from = "/*"
-  to = "https://boa-store.herokuapp.com/api/"
-  status = 200
-   signed = "REACT_APP_ACCESS_TOKEN"
-
 [[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
-    [headers.values]
-    Access-Control-Allow-Origin = "*"
+    for = "/*"
+        [headers.values]
+            Access-Control-Allow-Origin = "*"
+ [[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

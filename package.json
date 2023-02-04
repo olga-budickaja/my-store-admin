@@ -52,7 +52,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/api",
+  "deploy_context": "production",
+  "site_url": "https://boa-store.herokuapp.com/api/",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "keywords": [],
